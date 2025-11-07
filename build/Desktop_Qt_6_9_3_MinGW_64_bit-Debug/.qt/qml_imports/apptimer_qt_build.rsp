@@ -1,0 +1,14 @@
+-rootPath
+C:/Users/siroi/siroimono/w_qt/timer_qt
+-cmake-output
+-output-file
+C:/Users/siroi/siroimono/w_qt/timer_qt/build/Desktop_Qt_6_9_3_MinGW_64_bit-Debug/.qt/qml_imports/apptimer_qt_build.cmake
+-importPath
+C:/Users/siroi/siroimono/w_qt/timer_qt/build/Desktop_Qt_6_9_3_MinGW_64_bit-Debug/timer_qt
+-importPath
+C:/Users/siroi/siroimono/w_qt/timer_qt/build/Desktop_Qt_6_9_3_MinGW_64_bit-Debug
+-importPath
+C:/Qt/6.9.3/mingw_64/qml
+-qrcFiles
+C:/Users/siroi/siroimono/w_qt/timer_qt/build/Desktop_Qt_6_9_3_MinGW_64_bit-Debug/.qt/rcc/qmake_timer_qt.qrc
+C:/Users/siroi/siroimono/w_qt/timer_qt/build/Desktop_Qt_6_9_3_MinGW_64_bit-Debug/.qt/rcc/apptimer_qt_raw_qml_0.qrc
