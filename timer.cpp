@@ -253,3 +253,39 @@ QString Timer::get_qs_mediDialog()
 {
     return this->qs_mediDialog;
 }
+
+Q_INVOKABLE bool Timer::invok_mediNext()
+{
+    if(this->qs_medi == "Hello?")
+    {
+        return false;
+    }
+
+    if(this->qs_medi == "Day 0")
+    {
+        this->set_qs_medi("Day 1");
+        this->set_qs_mediDialog(this->vec_qsMedi[1]);
+
+        QByteArray qba_buf_write = "1";
+        this->p_file->write(qba_buf_write);
+    }
+    else if(this->qs_medi == "Day 1")
+    {
+        this->set_qs_medi("Day 2");
+        this->set_qs_mediDialog(this->vec_qsMedi[2]);
+
+        QByteArray qba_buf_write = "2";
+        this->p_file->write(qba_buf_write);
+    }
+    else if(this->qs_medi == "Day 2")
+    {
+        this->set_qs_medi("Day 0");
+        this->set_qs_mediDialog(this->vec_qsMedi[0]);
+
+        QByteArray qba_buf_write = "0";
+        this->p_file->write(qba_buf_write);
+    }
+
+    return true;
+}
+

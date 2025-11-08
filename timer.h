@@ -80,6 +80,7 @@ public:
     Q_INVOKABLE void invok_delete(int qml_idx);
     Q_INVOKABLE void invok_mediFile();
     Q_INVOKABLE void invok_mediCheckText();
+    Q_INVOKABLE bool invok_mediNext();
 
     //=============================================
 
