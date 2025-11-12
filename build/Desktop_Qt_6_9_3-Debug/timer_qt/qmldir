@@ -1,6 +1,0 @@
-module timer_qt
-typeinfo apptimer_qt.qmltypes
-prefer :/qt/qml/timer_qt/
-Main 1.0 Main.qml
-depends QtQuick
-

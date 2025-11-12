@@ -1,6 +1,0 @@
-<RCC>
-  <qresource prefix="/qt/qml/timer_qt">
-    <file alias="qmldir">/home/gray/gray/QtTimer/timer/build/Desktop_Qt_6_9_3-Debug/timer_qt/qmldir</file>
-  </qresource>
-</RCC>
-

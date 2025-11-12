@@ -55,6 +55,7 @@ template <> constexpr inline auto Timer::qt_create_metaobjectdata<qt_meta_tag_ZN
         "invok_delete",
         "invok_mediFile",
         "invok_mediCheckText",
+        "invok_mediNext",
         "qs_curDate",
         "qs_curTime",
         "p_cppModel",
@@ -92,18 +93,20 @@ template <> constexpr inline auto Timer::qt_create_metaobjectdata<qt_meta_tag_ZN
         QtMocHelpers::MethodData<void()>(15, 4, QMC::AccessPublic, QMetaType::Void),
         // Method 'invok_mediCheckText'
         QtMocHelpers::MethodData<void()>(16, 4, QMC::AccessPublic, QMetaType::Void),
+        // Method 'invok_mediNext'
+        QtMocHelpers::MethodData<bool()>(17, 4, QMC::AccessPublic, QMetaType::Bool),
     };
     QtMocHelpers::UintData qt_properties {
         // property 'qs_curDate'
-        QtMocHelpers::PropertyData<QString>(17, QMetaType::QString, QMC::DefaultPropertyFlags | QMC::Writable | QMC::Final, 0),
+        QtMocHelpers::PropertyData<QString>(18, QMetaType::QString, QMC::DefaultPropertyFlags | QMC::Writable | QMC::Final, 0),
         // property 'qs_curTime'
-        QtMocHelpers::PropertyData<QString>(18, QMetaType::QString, QMC::DefaultPropertyFlags | QMC::Writable | QMC::Final, 1),
+        QtMocHelpers::PropertyData<QString>(19, QMetaType::QString, QMC::DefaultPropertyFlags | QMC::Writable | QMC::Final, 1),
         // property 'p_cppModel'
-        QtMocHelpers::PropertyData<CppModel*>(19, 0x80000000 | 20, QMC::DefaultPropertyFlags | QMC::EnumOrFlag | QMC::Final, 2),
+        QtMocHelpers::PropertyData<CppModel*>(20, 0x80000000 | 21, QMC::DefaultPropertyFlags | QMC::EnumOrFlag | QMC::Final, 2),
         // property 'qs_medi'
-        QtMocHelpers::PropertyData<QString>(21, QMetaType::QString, QMC::DefaultPropertyFlags | QMC::Writable | QMC::Final, 3),
+        QtMocHelpers::PropertyData<QString>(22, QMetaType::QString, QMC::DefaultPropertyFlags | QMC::Writable | QMC::Final, 3),
         // property 'qs_mediDialog'
-        QtMocHelpers::PropertyData<QString>(22, QMetaType::QString, QMC::DefaultPropertyFlags | QMC::Writable | QMC::Final, 4),
+        QtMocHelpers::PropertyData<QString>(23, QMetaType::QString, QMC::DefaultPropertyFlags | QMC::Writable | QMC::Final, 4),
     };
     QtMocHelpers::UintData qt_enums {
     };
@@ -140,6 +143,8 @@ void Timer::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void 
         case 8: _t->invok_delete((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
         case 9: _t->invok_mediFile(); break;
         case 10: _t->invok_mediCheckText(); break;
+        case 11: { bool _r = _t->invok_mediNext();
+            if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = std::move(_r); }  break;
         default: ;
         }
     }
@@ -208,14 +213,14 @@ int Timer::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 11)
+        if (_id < 12)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 11;
+        _id -= 12;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 11)
+        if (_id < 12)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 11;
+        _id -= 12;
     }
     if (_c == QMetaObject::ReadProperty || _c == QMetaObject::WriteProperty
             || _c == QMetaObject::ResetProperty || _c == QMetaObject::BindableProperty

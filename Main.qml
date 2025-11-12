@@ -71,7 +71,7 @@ Window {
         anchors.top: currentTime_rec.bottom;
         anchors.topMargin: 10
         anchors.bottom: parent.bottom
-        anchors.bottomMargin: 100
+        anchors.bottomMargin: 70
         anchors.left: parent.left
         anchors.leftMargin: 10
         anchors.right: parent.right
@@ -338,9 +338,10 @@ Window {
     Button{
         id: btn_create
 
-        anchors.left: anc_item.left
-        anchors.top: anc_item.bottom
-        anchors.topMargin: 10
+        anchors.left: parent.left
+        anchors.leftMargin: 10
+        anchors.bottom: parent.bottom
+        anchors.bottomMargin: 22
 
         width: win.width / 4
         height: win.height / 8
@@ -387,8 +388,8 @@ Window {
 
         anchors.left:  btn_create.right
         anchors.leftMargin: 10
-        anchors.top: anc_item.bottom
-        anchors.topMargin: 10
+        anchors.bottom: parent.bottom
+        anchors.bottomMargin: 22
 
         width: win.width / 4
         height: win.height / 8
@@ -442,9 +443,8 @@ Window {
 
         anchors.left:  btn_medi.right
         anchors.leftMargin: 10
-        anchors.top: anc_item.bottom
-        anchors.topMargin: 10
-
+        anchors.bottom: parent.bottom
+        anchors.bottomMargin: 22
 
         width: win.width / 4
         height: win.height / 8
@@ -475,6 +475,7 @@ Window {
         radius: 5         // 테두리 둥글게
         border.color: "#c8e6c8"
         border.width: 1
+        z: 10
 
         scale: rec_next_mouse.pressed ? 0.95 : 1.0
 
@@ -507,6 +508,7 @@ Window {
         }
     }
 
+
     Dialog
     {
         id: dia_medi
@@ -523,16 +525,18 @@ Window {
             anchors.fill: parent
             // color: "#f0f8f0"
             // radius: 8
-        TextArea{
-            id:  dia_medi_textArea
-            text: cpp_timer.qs_mediDialog;
+            TextArea{
+                id:  dia_medi_textArea
+                text: cpp_timer.qs_mediDialog;
 
-            x : (win.width / 4) - 110
-            y : (win.height / 4) - 90
+                x : (win.width / 4) - 110
+                y : (win.height / 4) - 90
 
-            font.pixelSize: 15
-            font.bold: true
-        }
+                font.pixelSize: 15
+                font.bold: true
+            }
         }
     }
 }
+
+

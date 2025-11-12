@@ -1,6 +1,0 @@
-<RCC>
-  <qresource prefix="/qt/qml/timer_qt/">
-    <file alias="Main.qml">/home/gray/gray/QtTimer/timer/Main.qml</file>
-  </qresource>
-</RCC>
-

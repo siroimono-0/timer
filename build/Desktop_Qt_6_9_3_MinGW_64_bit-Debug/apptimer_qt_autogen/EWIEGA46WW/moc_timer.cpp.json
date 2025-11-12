@@ -65,6 +65,12 @@
                     "index": 10,
                     "name": "invok_mediCheckText",
                     "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 11,
+                    "name": "invok_mediNext",
+                    "returnType": "bool"
                 }
             ],
             "object": true,

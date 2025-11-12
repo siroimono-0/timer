@@ -93,5 +93,6 @@ Module {
         }
         Method { name: "invok_mediFile" }
         Method { name: "invok_mediCheckText" }
+        Method { name: "invok_mediNext"; type: "bool" }
     }
 }

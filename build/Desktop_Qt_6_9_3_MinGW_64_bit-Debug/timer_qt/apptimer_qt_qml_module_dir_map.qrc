@@ -1,6 +1,6 @@
 <RCC>
   <qresource prefix="/">
-    <file alias="/qt/qml/timer_qt">C:/Users/siroi/siroimono/w_qt/timer_qt/build/Desktop_Qt_6_9_3_MinGW_64_bit-Debug/timer_qt</file>
+    <file alias="/qt/qml/timer_qt">C:/Users/siroi/siroimono/share_org_win/QtTimer/timer/build/Desktop_Qt_6_9_3_MinGW_64_bit-Debug/timer_qt</file>
 
   </qresource>
 </RCC>
